@@ -236,9 +236,7 @@ The tool uses rules defined in `bin\wim_exclusions.ini`:
 - **Core Tools**: DISM, DiskPart, BCDBoot, Robocopy
 - **Platform**: x86/x64 compatible
 
----
-
-## 🎯 Perfect For
+## 🎯 For whom?
 - ✅ System administrators
 - ✅ IT professionals
 - ✅ Power users
