@@ -6,6 +6,9 @@
 
 # Windows Backup & Restore Tool 🛡️
 
+## 📸 Önizlemecreenshots
+
+
 ## Link:
 
 [![Stable?](https://img.shields.io/badge/Release-v1.svg?style=flat)](https://github.com/abdullah-erturk/Windows-Backup-Recovery-Tool/archive/refs/heads/main.zip)
@@ -241,9 +244,6 @@ The tool uses rules defined in `bin\wim_exclusions.ini`:
 - ✅ Power users
 - ✅ PC repair technicians
 - ✅ Anyone needing reliable Windows backup/restore solution
-
-## 📸 Screenshots
-*(Add screenshots of your application here)*
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
