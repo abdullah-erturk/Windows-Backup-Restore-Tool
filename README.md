@@ -120,11 +120,11 @@ Araç, `bin\wim_exclusions.ini` dosyasında tanımlanan kuralları kullanır:
 - **Platform**: x86/x64 uyumlu
 
 🎯 Kimler için?
-✅ Sistem yöneticileri
-✅ BT uzmanları
-✅ İleri düzey kullanıcılar
-✅ Bilgisayar tamir teknisyenleri
-✅ Güvenilir bir Windows yedekleme/geri yükleme çözümüne ihtiyaç duyan herkes
+- ✅ Sistem yöneticileri
+- ✅ BT uzmanları
+- ✅ İleri düzey kullanıcılar
+- ✅ Bilgisayar tamir teknisyenleri
+- ✅ Güvenilir bir Windows yedekleme/geri yükleme çözümüne ihtiyaç duyan herkes
 
 ## 🤝 Katkıda Bulunma
 
