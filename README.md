@@ -6,7 +6,7 @@
 
 # Windows Backup & Restore Tool 🛡️
 
-## 📸 Önizlemecreenshots
+## 📸 Önizleme / Screenshots
 
 
 ## Link:
