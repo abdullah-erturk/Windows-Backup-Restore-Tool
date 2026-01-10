@@ -122,6 +122,13 @@ Araç, `bin\wim_exclusions.ini` dosyasında tanımlanan kuralları kullanır:
 - **Temel Araçlar**: DISM, DiskPart, BCDBoot, Robocopy
 - **Platform**: x86/x64 uyumlu
 
+🎯 Kimler için?
+✅ Sistem yöneticileri
+✅ BT uzmanları
+✅ İleri düzey kullanıcılar
+✅ Bilgisayar tamir teknisyenleri
+✅ Güvenilir bir Windows yedekleme/geri yükleme çözümüne ihtiyaç duyan herkes
+
 ## 🤝 Katkıda Bulunma
 
 Katkılar, sorunlar ve özellik istekleri memnuniyetle karşılanır! Issues sayfasını kontrol etmekten çekinmeyin.
