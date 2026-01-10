@@ -101,7 +101,6 @@ Araç, `bin\wim_exclusions.ini` dosyasında tanımlanan kuralları kullanır:
 - **Mimari**: Windows Forms (C#)
 - **Temel Araçlar**: DISM, DiskPart, BCDBoot, Robocopy
 - **Platform**: x86/x64 uyumlu
-- **Lisans**: MIT (veya projenize uygun lisans)
 
 ## 🤝 Katkıda Bulunma
 
@@ -219,7 +218,6 @@ The tool uses rules defined in `bin\wim_exclusions.ini`:
 - **Architecture**: Windows Forms (C#)
 - **Core Tools**: DISM, DiskPart, BCDBoot, Robocopy
 - **Platform**: x86/x64 compatible
-- **License**: MIT (or your preferred license)
 
 ---
 
