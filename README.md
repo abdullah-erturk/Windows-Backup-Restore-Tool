@@ -2,265 +2,126 @@
 
 [![made-for-windows](https://img.shields.io/badge/Made%20for-Windows-00A4E3.svg?style=flat&logo=microsoft)](https://www.microsoft.com/)
 [![Open Source?](https://img.shields.io/badge/Open%20source%3F-Of%20course%21%20%E2%9D%A4-009e0a.svg?style=flat)](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool)
-[![Stable?](https://img.shields.io/badge/Release_Download_Link-v2%2E0%2E0%20%7C%20Stable-009e0a.svg?style=flat)](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/releases)
+[![Stable?](https://img.shields.io/badge/Release_Download_Link-v3%20%7C%20Stable-009e0a.svg?style=flat)](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/releases)
 
-# Windows Backup & Restore Tool v2 🛡️ 
+# Windows Backup / Restore Tool v3 🛡️
 
-## 📸 Önizleme / Screenshot
-![sample](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/blob/main/preview.jpg)
+### Profesyonel Sistem Yedekleme, Geri Yükleme ve Önyükleme Onarım Altyapısı
+> **Windows Backup Restore Tool**, .NET 8 tabanlı, yüksek performanslı ve teknisyen odaklı bir sistem yönetim aracıdır. Hem WinPE (Windows Preinstallation Environment) hem de canlı sistemlerde çalışarak; yedekleme, geri yükleme, boot onarımı ve sürücü yönetimini tek merkezden yönetmenizi sağlar.
 
-
-### Genel Bakış
-**Windows Backup & Restore Tool**, Windows işletim sistemleri için geliştirilmiş profesyonel bir yedekleme ve geri yükleme aracıdır. Hem normal Windows ortamında hem de WinPE (Windows Preinstallation Environment) ortamında sorunsuz çalışabilir. Öncelikli olarak yedekleme ve kurtarma işlemleri için tasarlanmış olsa da, gerektiğinde sıfırdan Windows kurulumunda da kullanılabilir.
-
-Konsol Arayüz sevenler için: https://github.com/abdullah-erturk/Windows-Backup-Recovery-Tool
-
-
----
-
-### Overview
-**Windows Backup & Restore Tool** is a professional backup and restoration utility designed for Windows operating systems. It works seamlessly in both normal Windows environments and WinPE (Windows Preinstallation Environment). While primarily designed for backup and recovery operations, it can also be used for fresh Windows installations when needed.
-
-For console interface lovers: https://github.com/abdullah-erturk/Windows-Backup-Recovery-Tool
-
+### Professional System Backup, Restore and Boot Repair Infrastructure
+> **Windows Backup Restore Tool** is a high-performance, technician-focused system management tool based on .NET 8. It works on both WinPE (Windows Preinstallation Environment) and live systems, allowing you to manage backup, restore, boot repair, and driver management from a single location.
 ---
 
 <details>
-<summary><b>📝Türkçe Açıklama</b></summary>
+<summary><b>📸 Önizleme/Preview</b></summary>
+  
+![sample](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/blob/main/1.jpeg)
+![sample](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/blob/main/2.jpeg)
+![sample](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/blob/main/3.jpeg)
 
-### ✨ Temel Özellikler
+</details>
 
-#### 🔄 Yedekleme (Backup)
-- **Tam Sistem Yedekleme**: Seçili bölümün veya sürücünün tam yedeğini alır
-- **VSS Desteği**: Windows ortamında Volume Shadow Copy Service ile çalışan sistemin yedeğini alabilir
-- **Akıllı Sıkıştırma**: 
-  - Sıkıştırmasız (None)
-  - Hızlı sıkıştırma (Fast)
-  - Maksimum sıkıştırma (Max)
-- **Otomatik Hariç Tutma**: Cloud klasörleri (OneDrive, Google Drive, Dropbox) ve gereksiz dosyalar otomatik olarak yedekleme dışı bırakılır
-- **WIM/ESD Format Desteği**: Standart Windows görüntü formatlarında yedekleme
+<details>
+<summary><b>📝 Türkçe Açıklama</b></summary>
 
-#### 🔧 Geri Yükleme (Restore)
-- **İki Mod**:
-  - **Tam Disk Geri Yükleme**: Tüm diski biçimlendirir ve sistemi kurar
-  - **Sadece Bölüm Geri Yükleme**: Seçili bölüme geri yükleme yapar
-- **Otomatik Boot Yapılandırması**: 
-  - GPT/UEFI desteği
-  - MBR/BIOS desteği
-  - Otomatik boot kaydı oluşturma
-- **Çoklu WIM İndeks Desteği**: WIM dosyasındaki farklı Windows sürümlerini seçebilme
-- **Akıllı Disk Yönetimi**: Sürücü harfi çakışmalarını otomatik çözer
+### 🚀 Bu Projeye Özel Yetenekler
 
-#### 🌍 Çok Dilli Destek
-- Türkçe
-- İngilizce
-- Fransızca
-- Basit Çince
-- Genişletilebilir dil sistemi (INI dosyaları ile)
+#### 🔄 Gelişmiş İmaj Yönetimi
+- **Ağ (Network) Desteği**: Yerel ağdaki paylaşımlı klasörlere (UNC yolları) doğrudan yedekleme ve ağ üzerindeki imajları kısa süre içerisinde geri yükleme.
+- **Merkezi Ağ Dağıtımı (PXE)**: WinPE üzerinden ağ bağlantısı kullanarak imajları ağdaki tüm bilgisayarlara hızlıca dağıtabilme (Mass Deployment).
+- **WIMLib Katmanı**: Geleneksel DISM yerine yüksek performanslı `wimlib` entegrasyonu ile ultra hızlı capture/apply işlemleri.
+- **VHD/VHDX Desteği**: İmajları doğrudan sanal disklere yükleyerek Native Boot kurulumları yapabilme.
 
-#### 🎯 Ek Özellikler
-- **İşlem Sonrası Eylemler**: Yedekleme/geri yükleme sonrası otomatik kapatma veya yeniden başlatma
-- **Gerçek Zamanlı İlerleme**: Detaylı log kaydı ve ilerleme göstergesi
-- **Firmware Algılama**: UEFI/BIOS otomatik algılama
-- **Güvenlik Kontrolleri**: Sistem diskine kazara yazma önleme
-- **Gizli Bölüm Desteği**: GUID yollu bölümlere geçici sürücü harfi atama
+#### 🔧 Önyükleme (Boot) ve Sistem Onarımı
+- **UEFI Boot Reconstructor**: EFI bölümü olmayan disklere boot yapılarını sıfırdan inşa etme.
+- **Otomatik Boot Sırası**: WinPE'de `bcdedit` ile UEFI önyükleme sırasını (DisplayOrder) otomatik düzenleme.
+- **DISM Sağlık Motoru**: Çevrimdışı sistemlerde DISM ve SFC ile derinlemesine dosya onarımı.
 
-### 💻 Sistem Gereksinimleri
-- **İşletim Sistemi**: Windows 7 ve üzeri (Windows 10/11 önerilir)
-- **.NET Framework**: 4.5 veya üzeri (4.6+ önerilir, WinPE sistemlerde yüklü olması gerekir)
-- **Yönetici Hakları**: Gerekli
-- **DISM Desteği**: Windows yerleşik DISM aracı (tüm modern Windows'larda mevcut)
-
-### 🚀 Kullanım Senaryoları
-
-#### 1️⃣ Sistem Yedeği Alma
-```
-1. Kaynak bölümü seçin (ör. C:\)
-2. Yedek dosyasının kaydedileceği konumu seçin
-3. Sıkıştırma seviyesini belirleyin
-4. "Yedekle" butonuna tıklayın
-```
-
-#### 2️⃣ Sistem Geri Yükleme
-```
-1. WIM/ESD dosyasını seçin
-2. Hedef diski veya bölümü seçin
-3. GPT veya MBR boot modunu seçin
-4. "Boot Kaydı Oluştur" seçeneğini işaretleyin
-5. "Geri Yükle" butonuna tıklayın
-```
-
-#### 3️⃣ Sıfırdan Windows Kurulumu
-```
-1. Resmi Windows ISO'dan WIM dosyasını çıkarın
-2. Geri Yükleme modunda "Tüm Disk" seçeneğini işaretleyin
-3. Hedef diski seçin
-4. Boot modunu (GPT/MBR) yapılandırın
-5. Geri yükleme işlemini başlatın
-```
-
-### ⚙️ Teknik Detaylar
-- **VSS Entegrasyonu**: PowerShell üzerinden Shadow Copy oluşturma
-- **Robocopy Fallback**: VSS başarısız olursa dosya bazlı kopyalama
-- **DiskPart Otomasyonu**: Disk yapılandırması için template sistemli yaklaşım
-- **WMI Sorguları**: Disk ve bölüm bilgilerini almak için
-- **IOCTL Çağrıları**: Düşük seviye disk bilgilerine erişim
-
-### 📋 Yedekleme Hariç Tutma Sistemi
-Araç, `bin\wim_exclusions.ini` dosyasında tanımlanan kuralları kullanır:
-- Sistem dosyaları (hiberfil.sys, pagefile.sys)
-- Geçici dosyalar
-- Geri dönüşüm kutusu
-- Cloud senkronizasyon klasörleri (otomatik algılama)
-- Zaten sıkıştırılmış dosyalar (zip, jpg, mp4, vb.)
-
-### 🔒 Güvenlik ve İstikrar
-- Sistem diskine yazma koruması
-- İşlem öncesi onay diyalogları
-- Otomatik backup dosyası temizleme (iptal durumunda)
-- Sürücü harfi çakışma yönetimi
-- Detaylı hata raporlama
-
-### 🛠️ Geliştirici Notları
-- **Mimari**: Windows Forms (C#)
-- **Temel Araçlar**: DISM, DiskPart, BCDBoot, Robocopy
-- **Platform**: x86/x64 uyumlu
-
-### 🎯 Kimler için?
-- ✅ Sistem yöneticileri
-- ✅ BT uzmanları
-- ✅ İleri düzey kullanıcılar
-- ✅ Bilgisayar tamir teknisyenleri
-- ✅ Güvenilir bir Windows yedekleme/geri yükleme çözümüne ihtiyaç duyan herkes
-
-## 🤝 Katkıda Bulunma
-
-Katkılar, sorunlar ve özellik istekleri memnuniyetle karşılanır! Issues sayfasını kontrol etmekten çekinmeyin.
-
-## ⭐ Yıldız
-
-Bu aracı faydalı bulduysanız, lütfen bir yıldız vererek değerlendirin!
+#### 📦 Sürücü ve Yerelleştirme
+- **Sürücü (Driver) Yönetimi**: Çalışan veya offline sistemlerden sürücü çekme (Export) ve diğer sistemlere tek tıkla enjekte etme (Import).
+- **Esnek Dil Sistemi**: Harici `.ini` dosyaları üzerinden kolayca yeni dillere çevrilebilir ve özelleştirilebilir yerelleştirme yapısı (TR/EN yerleşik).
 
 ---
 
-**Not**: Yedeklerinizi her zaman test edin! Bir yedek, ancak ondan geri yükleme yapabildiğiniz kadar iyidir. Yedekleme stratejinizin etkili olduğundan emin olmak için periyodik olarak test geri yüklemeleri gerçekleştirin.
+### 📚 Kullanım Senaryoları
+
+1. **Sistem Göçü**: Mevcut Windows'u yedekleyip yeni bir NVMe diske dakikalar içinde taşıyın.
+2. **Toplu Dağıtım (Deployment)**: WinPE üzerinden ağdaki tüm PC'lere merkezi imajı hızla kurun.
+3. **Temiz Kurulum**: GPT/MBR disk yapılarını profesyonel standartlarda (Recovery bölümü sonda olacak şekilde) saniyeler içinde oluşturun.
+4. **Erişilemeyen Sistem Onarımı**: Açılmayan sistemleri HealthCheck ile tarayın ve sistem dosyalarını onarın.
+5. **VHD/VHDX Native Boot**: Fiziksel diski bölümlendirmeden sanal diskler üzerine kurulan sistemleri test edin.
+
+---
+
+### 📋 Teknik Özellikler
+- **Framework**: .NET 8
+- **İşletim Sistemi**: Windows 10, 11, Server 2016/2019/2022 (x64)
+- **Altyapı**: WIMLib Core, DiskPart API, BCD Engineering
+- **Platform**: x64 / WinPE Optimize
+- **Lisans**: Açık Kaynak Geliştirme Projesi
+
+---
+
+### 🤝 Katkıda Bulunma
+Bu proje bir **Açık Kaynak (Open Source)** geliştirme projesidir. Katkılar, sorun bildirimleri ve özellik istekleri memnuniyetle karşılanır!
+
+### ⭐ Destek
+Bu aracı faydalı bulduysanız, lütfen bir yıldız vererek değerlendirin!
+
 </details>
 
 <details>
 <summary><b>📝 English Description</b></summary>
 
-### ✨ Key Features
+### 🚀 Project-Specific Capabilities
 
-#### 🔄 Backup Capabilities
-- **Full System Backup**: Complete backup of selected partitions or drives
-- **VSS Support**: Volume Shadow Copy Service integration for live system backup
-- **Intelligent Compression**: 
-  - None (fastest)
-  - Fast (balanced)
-  - Maximum (smallest size)
-- **Smart Exclusions**: Automatically excludes cloud folders (OneDrive, Google Drive, Dropbox) and unnecessary files
-- **WIM/ESD Format Support**: Standard Windows imaging formats
+#### 🔄 Advanced Image Management
+- **Network Support**: Direct backup to UNC shares and rapid image restoration from network shared folders.
+- **Centralized Network Deployment (PXE)**: Use WinPE and network connectivity to rapidly deploy images to multiple PCs across the network.
+- **WIMLib Layer**: Ultra-fast capture and apply operations using high-performance `wimlib` integration.
+- **VHD/VHDX Support**: Deploy images directly to virtual disks for Native Boot testing.
 
-#### 🔧 Restoration Features
-- **Dual Mode Operation**:
-  - **Whole Disk Restore**: Formats entire disk and deploys system
-  - **Partition Only Restore**: Restores to selected partition
-- **Automatic Boot Configuration**: 
-  - GPT/UEFI support
-  - MBR/BIOS support
-  - Automated boot record creation
-- **Multi-Index WIM Support**: Select different Windows editions from WIM file
-- **Intelligent Disk Management**: Automatic resolution of drive letter conflicts
+#### 🔧 Boot & System Repair
+- **UEFI Boot Reconstructor**: Build bootloader structures from scratch on disks missing EFI partitions.
+- **Automatic Boot Order**: Automatically refine UEFI Boot Order (DisplayOrder) via `bcdedit` within WinPE.
+- **DISM Health Engine**: Deep file system repair using DISM and SFC tools on offline installations.
 
-#### 🌍 Multi-Language Support
-- Turkish
-- English
-- French
-- Simplified Chinese
-- Extensible language system (via INI files)
-
-#### 🎯 Additional Features
-- **Post-Operation Actions**: Automatic shutdown or restart after backup/restore
-- **Real-Time Progress**: Detailed logging and progress indicators
-- **Firmware Detection**: Automatic UEFI/BIOS detection
-- **Safety Checks**: Prevents accidental system disk overwrites
-- **Hidden Partition Support**: Temporary drive letter assignment for GUID paths
-
-### 💻 System Requirements
-- **Operating System**: Windows 7 and above (Windows 10/11 recommended)
-- **.NET Framework**: 4.5 or higher (4.6+ recommended. WinPE systems also require the .NET Framework to be installed.)
-- **Administrator Rights**: Required
-- **DISM Support**: Windows built-in DISM tool (available in all modern Windows)
-
-### 🚀 Usage Scenarios
-
-#### 1️⃣ Creating System Backup
-```
-1. Select source partition (e.g., C:\)
-2. Choose backup file destination
-3. Set compression level
-4. Click "Backup" button
-```
-
-#### 2️⃣ Restoring System
-```
-1. Browse and select WIM/ESD file
-2. Choose target disk or partition
-3. Select GPT or MBR boot mode
-4. Enable "Create Boot Record" option
-5. Click "Restore" button
-```
-
-#### 3️⃣ Fresh Windows Installation
-```
-1. Extract WIM file from official Windows ISO
-2. Select "Whole Disk" in restore mode
-3. Choose target disk
-4. Configure boot mode (GPT/MBR)
-5. Start restoration process
-```
-
-### ⚙️ Technical Details
-- **VSS Integration**: Shadow Copy creation via PowerShell
-- **Robocopy Fallback**: File-level copying when VSS fails
-- **DiskPart Automation**: Template-based disk configuration approach
-- **WMI Queries**: Disk and partition information retrieval
-- **IOCTL Calls**: Low-level disk information access
-
-### 📋 Backup Exclusion System
-The tool uses rules defined in `bin\wim_exclusions.ini`:
-- System files (hiberfil.sys, pagefile.sys)
-- Temporary files
-- Recycle bin
-- Cloud sync folders (automatic detection)
-- Already compressed files (zip, jpg, mp4, etc.)
-
-### 🔒 Security and Stability
-- System disk write protection
-- Pre-operation confirmation dialogs
-- Automatic backup file cleanup (on abort)
-- Drive letter conflict management
-- Detailed error reporting
-
-### 🛠️ Developer Notes
-- **Architecture**: Windows Forms (C#)
-- **Core Tools**: DISM, DiskPart, BCDBoot, Robocopy
-- **Platform**: x86/x64 compatible
-
-### 🎯 For whom?
-- ✅ System administrators
-- ✅ IT professionals
-- ✅ Power users
-- ✅ PC repair technicians
-- ✅ Anyone needing reliable Windows backup/restore solution
-
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-
-## ⭐ Show Your Support
-Give a ⭐️ if this project helped you!
+#### 📦 Drivers & Localization
+- **Driver Management**: Extract drivers from live or offline systems and inject them into other installations with a single click.
+- **Flexible Language System**: Easily extendable localization framework via external `.ini` files (TR/EN built-in).
 
 ---
 
-**Note**: This tool requires administrative privileges and uses Windows native tools (DISM, DiskPart, BCDBoot). Always test in a safe environment before using on production systems.
+### 📚 Usage Scenarios
+1. **System Migration**: Backup your current Windows and migrate it to a new NVMe disk in minutes.
+2. **Mass Deployment**: Rapidly deploy a master image to multiple network-connected PCs via WinPE.
+3. **Professional Partitioning**: Create GPT/MBR structures (with Recovery at the end) in seconds.
+4. **Disaster Recovery**: Scan non-booting systems using HealthCheck and repair system files using original sources.
+5. **VHD/VHDX Deployment**: Test system installations on virtual drives without altering your physical partition.
+
+---
+
+### 📋 Technical Specifications
+- **Framework**: .NET 8
+- **OS Support**: Windows 10, 11, Server 2016/2019/2022 (x64)
+- **Core Technology**: WIMLib Core, DiskPart API, BCD Engineering
+- **Platform**: x64 / WinPE Optimized
+- **License**: Open Source Development Project
+
+---
+
+### 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+### ⭐ Support
+Give a ⭐️ if this project helped you!
+
 </details>
+
+---
+
+<p align="center">
+  <b>Developed by Abdullah ERTÜRK</b><br>
+  <a href="https://erturk.netlify.app" target="_blank">erturk.netlify.app</a> | <a href="https://github.com/abdullah-erturk" target="_blank">github.com/abdullah-erturk</a>
+</p>

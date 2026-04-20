@@ -6,4 +6,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Project</StartAction>
   </PropertyGroup>
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Administrator\Desktop\Backup_Restore_Tool_v3_Source\RecoveryTool\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

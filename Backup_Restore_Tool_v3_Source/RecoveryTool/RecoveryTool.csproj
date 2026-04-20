@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>x64</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+
+    <!-- Application Identity -->
+    <AssemblyName>RecoveryTool</AssemblyName>
+    <RootNamespace>BackupRestoreTool</RootNamespace>
+    <Product>Windows Backup / Restore Tool</Product>
+    <AssemblyTitle>Windows Backup / Restore Tool</AssemblyTitle>
+    <Description>Windows disk backup, restore and boot repair tool for live Windows and WinPE environments.</Description>
+    <Authors>Abdullah ERTÜRK</Authors>
+    <Company>Abdullah ERTÜRK</Company>
+    <Copyright>Copyright © 2025 Abdullah ERTÜRK</Copyright>
+    <Version>3.0.0</Version>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <FileVersion>3.0.0.0</FileVersion>
+    <NeutralLanguage>tr-TR</NeutralLanguage>
+
+    <!-- Single-File Publish Settings -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+  </ItemGroup>
+
+  <!-- Always copy AppFiles to bin subfolder in output folder for consistency -->
+  <Target Name="CopyAppFilesToBin" AfterTargets="Build">
+    <ItemGroup>
+      <AppFilesToCopy Include="$(ProjectDir)AppFiles\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(AppFilesToCopy)" DestinationFolder="$(OutputPath)bin\%(RecursiveDir)" SkipUnchangedFiles="false" />
+  </Target>
+
+  <Target Name="CopySupportFilesAfterPublish" AfterTargets="Publish">
+    <ItemGroup>
+      <SupportFiles Include="$(ProjectDir)AppFiles\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SupportFiles)" DestinationFolder="$(PublishDir)bin\%(RecursiveDir)" SkipUnchangedFiles="false" />
+  </Target>
+
+</Project>
