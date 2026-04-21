@@ -14,7 +14,7 @@
 ---
 
 <details>
-<summary><b>📸 Önizleme/Preview</b></summary>
+<summary><b>📸 Önizleme/Preview/미리보기</b></summary>
   
 ![sample](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/blob/main/1.jpeg)
 ![sample](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/blob/main/2.jpeg)
