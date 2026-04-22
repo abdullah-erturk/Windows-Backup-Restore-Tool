@@ -119,6 +119,56 @@ Give a ⭐️ if this project helped you!
 
 </details>
 
+</details>
+
+<details>
+<summary><b>📝 Magyar leírás</b></summary>
+
+### 🚀 Projekt-specifikus képességek
+
+#### 🔄 Fejlett képfeldolgozás
+- **Hálózati támogatás**: Közvetlen biztonsági mentés UNC megosztásokra és gyors képfájl-helyreállítás hálózati megosztott mappákból.
+- **Központosított hálózati telepítés (PXE)**: Használja a WinPE-t és a hálózati kapcsolatot képek gyors telepítésére több számítógépre a hálózaton keresztül.
+- **WIMLib réteg**: Ultra-gyors rögzítési és alkalmazási műveletek nagy teljesítményű `wimlib` integráció használatával.
+- **VHD/VHDX támogatás**: Képek közvetlen telepítése virtuális lemezekre a natív indítás teszteléséhez.
+
+#### 🔧 Indítás és rendszerjavítás
+- **UEFI Indítás-visszaállító**: Bootloader-struktúrák létrehozása a semmiből olyan lemezeken, amelyekről hiányoznak az EFI-partíciók.
+- **Automatikus indítási sorrend**: Az UEFI indítási sorrend (DisplayOrder) automatikus finomítása a `bcdedit` segítségével a WinPE-n belül.
+- **DISM állapotkezelő**: Mély fájlrendszer javítás DISM és SFC eszközökkel offline telepítéseken.
+
+#### 📦 Illesztőprogramok és lokalizáció
+- **Illesztőprogram-kezelés**: Bontsa ki az illesztőprogramokat élő vagy offline rendszerekből, és egyetlen kattintással illessze be őket más telepítésekbe.
+- **Rugalmas nyelvi rendszer**: Könnyen bővíthető lokalizációs keretrendszer külső .ini fájlokkal (beépített TR/EN).
+
+---
+
+### 📚 Használati forgatókönyvek
+1. **Rendszeráttelepítés**: Készítsen biztonsági másolatot jelenlegi Windows rendszeréről, és percek alatt migrálja át egy új NVMe lemezre.
+2. **Tömeges telepítés**: Gyorsan telepítsen egy főképet több hálózathoz csatlakoztatott számítógépre WinPE segítségével.
+3. **Professzionális partícionálás**: Hozzon létre GPT/MBR struktúrákat (végén Helyreállítással) másodpercek alatt.
+4. **Katasztrófa utáni helyreállítás**: Indítsa el a nem induló rendszerek vizsgálatát a HealthCheck segítségével, és javítsa a rendszerfájlokat az eredeti források felhasználásával.
+5. **VHD/VHDX telepítés**: Tesztelje a rendszertelepítéseket virtuális meghajtókon anélkül, hogy megváltoztatná a fizikai partícióját.
+
+---
+
+### 📋 Műszaki specifikációk
+- **Framework**: .NET 8
+- **OS támogatás**: Windows 10, 11, Server 2016/2019/2022 (x64)
+- **Alapvető technológia**: WIMLib mag, DiskPart API, BCD fejlesztés
+- **Platform**: x64 / WinPE optimalizált
+- **Licenc**: Nyílt Forráskódú Fejlesztési Projekt
+
+---
+
+### 🤝 Hozzájárulás
+Hozzájárulások, problémák és funkciókérések mind üdvözölve vannak!
+
+### ⭐ Támogatás
+Adj egy ⭐️-t, ha ez a projekt segített neked!
+
+</details>
+
 ---
 
 <p align="center">
