@@ -127,9 +127,9 @@ namespace BackupRestoreTool
             // 
             // lblSourcePart
             // 
-            lblSourcePart.Location = new Point(63, 19);
+            lblSourcePart.Location = new Point(29, 18);
             lblSourcePart.Name = "lblSourcePart";
-            lblSourcePart.Size = new Size(99, 23);
+            lblSourcePart.Size = new Size(325, 23);
             lblSourcePart.TabIndex = 0;
             lblSourcePart.Tag = "LBL_SourcePart";
             lblSourcePart.Text = "Source:";
@@ -137,43 +137,43 @@ namespace BackupRestoreTool
             // cmbBackupSource
             // 
             cmbBackupSource.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbBackupSource.Location = new Point(63, 44);
+            cmbBackupSource.Location = new Point(29, 44);
             cmbBackupSource.Name = "cmbBackupSource";
-            cmbBackupSource.Size = new Size(658, 23);
+            cmbBackupSource.Size = new Size(744, 23);
             cmbBackupSource.TabIndex = 1;
             // 
             // lblBackupDest
             // 
-            lblBackupDest.Location = new Point(63, 99);
+            lblBackupDest.Location = new Point(29, 97);
             lblBackupDest.Name = "lblBackupDest";
-            lblBackupDest.Size = new Size(99, 23);
+            lblBackupDest.Size = new Size(361, 23);
             lblBackupDest.TabIndex = 2;
             lblBackupDest.Tag = "LBL_BackupDest";
             lblBackupDest.Text = "Target WIM:";
             // 
             // txtBackupDest
             // 
-            txtBackupDest.Location = new Point(63, 123);
+            txtBackupDest.Location = new Point(29, 119);
             txtBackupDest.Name = "txtBackupDest";
             txtBackupDest.ReadOnly = true;
-            txtBackupDest.Size = new Size(573, 23);
+            txtBackupDest.Size = new Size(639, 23);
             txtBackupDest.TabIndex = 3;
             // 
             // btnBrowseBackup
             // 
             btnBrowseBackup.FlatStyle = FlatStyle.Flat;
-            btnBrowseBackup.Location = new Point(642, 121);
+            btnBrowseBackup.Location = new Point(674, 119);
             btnBrowseBackup.Name = "btnBrowseBackup";
-            btnBrowseBackup.Size = new Size(79, 28);
+            btnBrowseBackup.Size = new Size(99, 28);
             btnBrowseBackup.TabIndex = 4;
             btnBrowseBackup.Tag = "BTN_Browse";
             btnBrowseBackup.Text = "Browse";
             // 
             // lblCompression
             // 
-            lblCompression.Location = new Point(63, 169);
+            lblCompression.Location = new Point(29, 168);
             lblCompression.Name = "lblCompression";
-            lblCompression.Size = new Size(99, 23);
+            lblCompression.Size = new Size(297, 23);
             lblCompression.TabIndex = 5;
             lblCompression.Tag = "LBL_Compression";
             lblCompression.Text = "Compression:";
@@ -181,9 +181,9 @@ namespace BackupRestoreTool
             // cbCompression
             // 
             cbCompression.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbCompression.Location = new Point(63, 194);
+            cbCompression.Location = new Point(29, 194);
             cbCompression.Name = "cbCompression";
-            cbCompression.Size = new Size(658, 23);
+            cbCompression.Size = new Size(203, 23);
             cbCompression.TabIndex = 6;
             // 
             // btnStartBackup
@@ -192,7 +192,7 @@ namespace BackupRestoreTool
             btnStartBackup.FlatStyle = FlatStyle.Flat;
             btnStartBackup.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnStartBackup.ForeColor = Color.White;
-            btnStartBackup.Location = new Point(184, 240);
+            btnStartBackup.Location = new Point(222, 240);
             btnStartBackup.Name = "btnStartBackup";
             btnStartBackup.Size = new Size(399, 45);
             btnStartBackup.TabIndex = 7;
@@ -226,7 +226,7 @@ namespace BackupRestoreTool
             // 
             lblWimPath.Location = new Point(25, 20);
             lblWimPath.Name = "lblWimPath";
-            lblWimPath.Size = new Size(100, 23);
+            lblWimPath.Size = new Size(259, 23);
             lblWimPath.TabIndex = 0;
             lblWimPath.Tag = "LBL_WimPath";
             lblWimPath.Text = "Image Path:";
@@ -253,7 +253,7 @@ namespace BackupRestoreTool
             // 
             lblWimIndex.Location = new Point(25, 85);
             lblWimIndex.Name = "lblWimIndex";
-            lblWimIndex.Size = new Size(100, 23);
+            lblWimIndex.Size = new Size(266, 23);
             lblWimIndex.TabIndex = 3;
             lblWimIndex.Tag = "LBL_WimIndex";
             lblWimIndex.Text = "Index:";
@@ -272,7 +272,7 @@ namespace BackupRestoreTool
             gbStrategy.Controls.Add(rbWholeDisk);
             gbStrategy.Location = new Point(460, 15);
             gbStrategy.Name = "gbStrategy";
-            gbStrategy.Size = new Size(320, 80);
+            gbStrategy.Size = new Size(320, 103);
             gbStrategy.TabIndex = 5;
             gbStrategy.TabStop = false;
             gbStrategy.Tag = "GB_Strategy";
@@ -282,7 +282,7 @@ namespace BackupRestoreTool
             // 
             rbPartRestore.AutoSize = true;
             rbPartRestore.Checked = true;
-            rbPartRestore.Location = new Point(20, 35);
+            rbPartRestore.Location = new Point(20, 28);
             rbPartRestore.Name = "rbPartRestore";
             rbPartRestore.Size = new Size(70, 19);
             rbPartRestore.TabIndex = 0;
@@ -293,18 +293,19 @@ namespace BackupRestoreTool
             // rbWholeDisk
             // 
             rbWholeDisk.AutoSize = true;
-            rbWholeDisk.Location = new Point(125, 35);
+            rbWholeDisk.Location = new Point(20, 68);
             rbWholeDisk.Name = "rbWholeDisk";
             rbWholeDisk.Size = new Size(84, 19);
             rbWholeDisk.TabIndex = 1;
             rbWholeDisk.Tag = "RB_DiskRestore";
             rbWholeDisk.Text = "Whole Disk";
+            rbWholeDisk.CheckedChanged += rbWholeDisk_CheckedChanged;
             // 
             // lblTarget
             // 
             lblTarget.Location = new Point(25, 145);
             lblTarget.Name = "lblTarget";
-            lblTarget.Size = new Size(100, 23);
+            lblTarget.Size = new Size(239, 23);
             lblTarget.TabIndex = 6;
             lblTarget.Tag = "LBL_Target";
             lblTarget.Text = "Target:";
@@ -322,7 +323,7 @@ namespace BackupRestoreTool
             chkCreateBoot.AutoSize = true;
             chkCreateBoot.Checked = true;
             chkCreateBoot.CheckState = CheckState.Checked;
-            chkCreateBoot.Location = new Point(460, 105);
+            chkCreateBoot.Location = new Point(460, 144);
             chkCreateBoot.Name = "chkCreateBoot";
             chkCreateBoot.Size = new Size(87, 19);
             chkCreateBoot.TabIndex = 8;
@@ -333,9 +334,9 @@ namespace BackupRestoreTool
             // 
             gbBoot.Controls.Add(rbUEFI);
             gbBoot.Controls.Add(rbBIOS);
-            gbBoot.Location = new Point(460, 135);
+            gbBoot.Location = new Point(460, 170);
             gbBoot.Name = "gbBoot";
-            gbBoot.Size = new Size(320, 60);
+            gbBoot.Size = new Size(320, 74);
             gbBoot.TabIndex = 9;
             gbBoot.TabStop = false;
             gbBoot.Tag = "GB_Boot";
@@ -345,7 +346,7 @@ namespace BackupRestoreTool
             // 
             rbUEFI.AutoSize = true;
             rbUEFI.Checked = true;
-            rbUEFI.Location = new Point(20, 25);
+            rbUEFI.Location = new Point(20, 29);
             rbUEFI.Name = "rbUEFI";
             rbUEFI.Size = new Size(81, 19);
             rbUEFI.TabIndex = 0;
@@ -355,7 +356,7 @@ namespace BackupRestoreTool
             // rbBIOS
             // 
             rbBIOS.AutoSize = true;
-            rbBIOS.Location = new Point(140, 25);
+            rbBIOS.Location = new Point(180, 29);
             rbBIOS.Name = "rbBIOS";
             rbBIOS.Size = new Size(86, 19);
             rbBIOS.TabIndex = 1;
@@ -469,7 +470,7 @@ namespace BackupRestoreTool
             btnStartRestore.FlatStyle = FlatStyle.Flat;
             btnStartRestore.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnStartRestore.ForeColor = Color.White;
-            btnStartRestore.Location = new Point(460, 202);
+            btnStartRestore.Location = new Point(460, 263);
             btnStartRestore.Name = "btnStartRestore";
             btnStartRestore.Size = new Size(320, 42);
             btnStartRestore.TabIndex = 11;
@@ -520,9 +521,9 @@ namespace BackupRestoreTool
             // 
             lblInstalledOS.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             lblInstalledOS.ForeColor = Color.FromArgb(0, 120, 215);
-            lblInstalledOS.Location = new Point(30, 130);
+            lblInstalledOS.Location = new Point(30, 147);
             lblInstalledOS.Name = "lblInstalledOS";
-            lblInstalledOS.Size = new Size(570, 30);
+            lblInstalledOS.Size = new Size(683, 30);
             lblInstalledOS.TabIndex = 3;
             // 
             // btnDriverBackup
@@ -532,7 +533,7 @@ namespace BackupRestoreTool
             btnDriverBackup.FlatStyle = FlatStyle.Flat;
             btnDriverBackup.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnDriverBackup.ForeColor = Color.White;
-            btnDriverBackup.Location = new Point(592, 26);
+            btnDriverBackup.Location = new Point(515, 18);
             btnDriverBackup.Name = "btnDriverBackup";
             btnDriverBackup.Size = new Size(198, 42);
             btnDriverBackup.TabIndex = 6;
@@ -548,7 +549,7 @@ namespace BackupRestoreTool
             btnDriverRestore.FlatStyle = FlatStyle.Flat;
             btnDriverRestore.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnDriverRestore.ForeColor = Color.White;
-            btnDriverRestore.Location = new Point(388, 26);
+            btnDriverRestore.Location = new Point(515, 80);
             btnDriverRestore.Name = "btnDriverRestore";
             btnDriverRestore.Size = new Size(198, 42);
             btnDriverRestore.TabIndex = 7;
@@ -564,7 +565,7 @@ namespace BackupRestoreTool
             btnAutoBootFix.ForeColor = Color.White;
             btnAutoBootFix.Location = new Point(30, 202);
             btnAutoBootFix.Name = "btnAutoBootFix";
-            btnAutoBootFix.Size = new Size(300, 50);
+            btnAutoBootFix.Size = new Size(365, 50);
             btnAutoBootFix.TabIndex = 2;
             btnAutoBootFix.Tag = "BTN_BootFix";
             btnAutoBootFix.Text = "SCAN & REPAIR";
@@ -575,7 +576,7 @@ namespace BackupRestoreTool
             lblBootFixDesc.ForeColor = Color.Gray;
             lblBootFixDesc.Location = new Point(34, 255);
             lblBootFixDesc.Name = "lblBootFixDesc";
-            lblBootFixDesc.Size = new Size(296, 40);
+            lblBootFixDesc.Size = new Size(361, 50);
             lblBootFixDesc.TabIndex = 5;
             lblBootFixDesc.Tag = "UI_LBL_BootFixDesc";
             lblBootFixDesc.Text = "Automatically repair boot files (BCD) if the system fails to start.";
@@ -585,9 +586,9 @@ namespace BackupRestoreTool
             btnHealthCheck.BackColor = Color.FromArgb(100, 100, 100);
             btnHealthCheck.FlatStyle = FlatStyle.Flat;
             btnHealthCheck.ForeColor = Color.White;
-            btnHealthCheck.Location = new Point(338, 202);
+            btnHealthCheck.Location = new Point(424, 202);
             btnHealthCheck.Name = "btnHealthCheck";
-            btnHealthCheck.Size = new Size(300, 50);
+            btnHealthCheck.Size = new Size(349, 50);
             btnHealthCheck.TabIndex = 3;
             btnHealthCheck.Tag = "UI_BTN_HealthCheck";
             btnHealthCheck.Text = "CHECK & REPAIR HEALTH";
@@ -596,9 +597,9 @@ namespace BackupRestoreTool
             // lblHealthCheckDesc
             // 
             lblHealthCheckDesc.ForeColor = Color.Gray;
-            lblHealthCheckDesc.Location = new Point(338, 255);
+            lblHealthCheckDesc.Location = new Point(424, 255);
             lblHealthCheckDesc.Name = "lblHealthCheckDesc";
-            lblHealthCheckDesc.Size = new Size(300, 40);
+            lblHealthCheckDesc.Size = new Size(349, 50);
             lblHealthCheckDesc.TabIndex = 4;
             lblHealthCheckDesc.Tag = "UI_LBL_HealthCheckInfo";
             lblHealthCheckDesc.Text = "Scan and repair corrupted system files and Windows image (DISM & SFC).";
@@ -616,19 +617,21 @@ namespace BackupRestoreTool
             // 
             // lblLang
             // 
-            lblLang.Location = new Point(30, 26);
+            lblLang.Location = new Point(27, 22);
             lblLang.Name = "lblLang";
             lblLang.Size = new Size(100, 23);
             lblLang.TabIndex = 0;
             lblLang.Tag = "LBL_Lang";
             lblLang.Text = "Language:";
+            lblLang.TextAlign = ContentAlignment.TopRight;
+            lblLang.Click += lblLang_Click;
             // 
             // cbLang
             // 
             cbLang.DropDownStyle = ComboBoxStyle.DropDownList;
             cbLang.Location = new Point(133, 22);
             cbLang.Name = "cbLang";
-            cbLang.Size = new Size(134, 23);
+            cbLang.Size = new Size(177, 23);
             cbLang.TabIndex = 1;
             // 
             // lblHeader
@@ -645,9 +648,9 @@ namespace BackupRestoreTool
             // btnAbout
             // 
             btnAbout.FlatStyle = FlatStyle.Flat;
-            btnAbout.Location = new Point(747, 15);
+            btnAbout.Location = new Point(643, 15);
             btnAbout.Name = "btnAbout";
-            btnAbout.Size = new Size(75, 30);
+            btnAbout.Size = new Size(179, 30);
             btnAbout.TabIndex = 6;
             btnAbout.Tag = "BTN_About";
             btnAbout.Text = "About";
@@ -656,9 +659,9 @@ namespace BackupRestoreTool
             // 
             lblBootMode.BackColor = Color.FromArgb(240, 240, 240);
             lblBootMode.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblBootMode.Location = new Point(522, 15);
+            lblBootMode.Location = new Point(419, 15);
             lblBootMode.Name = "lblBootMode";
-            lblBootMode.Size = new Size(220, 30);
+            lblBootMode.Size = new Size(218, 30);
             lblBootMode.TabIndex = 5;
             lblBootMode.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -673,9 +676,9 @@ namespace BackupRestoreTool
             // lblProgressStatus
             // 
             lblProgressStatus.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            lblProgressStatus.Location = new Point(121, 430);
+            lblProgressStatus.Location = new Point(134, 430);
             lblProgressStatus.Name = "lblProgressStatus";
-            lblProgressStatus.Size = new Size(701, 23);
+            lblProgressStatus.Size = new Size(688, 23);
             lblProgressStatus.TabIndex = 3;
             lblProgressStatus.Text = "Ready";
             lblProgressStatus.TextAlign = ContentAlignment.MiddleLeft;
@@ -686,7 +689,7 @@ namespace BackupRestoreTool
             btnClearLog.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
             btnClearLog.Location = new Point(12, 430);
             btnClearLog.Name = "btnClearLog";
-            btnClearLog.Size = new Size(105, 23);
+            btnClearLog.Size = new Size(116, 23);
             btnClearLog.TabIndex = 10;
             btnClearLog.Text = "Clear";
             btnClearLog.TextAlign = ContentAlignment.TopCenter;
@@ -739,7 +742,7 @@ namespace BackupRestoreTool
             chkPostAction.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             chkPostAction.Location = new Point(531, 457);
             chkPostAction.Name = "chkPostAction";
-            chkPostAction.Size = new Size(104, 23);
+            chkPostAction.Size = new Size(139, 23);
             chkPostAction.TabIndex = 8;
             chkPostAction.Text = "On Finish:";
             chkPostAction.UseVisualStyleBackColor = true;
@@ -748,9 +751,9 @@ namespace BackupRestoreTool
             // 
             cmbPostAction.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             cmbPostAction.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbPostAction.Location = new Point(655, 455);
+            cmbPostAction.Location = new Point(676, 455);
             cmbPostAction.Name = "cmbPostAction";
-            cmbPostAction.Size = new Size(163, 23);
+            cmbPostAction.Size = new Size(142, 23);
             cmbPostAction.TabIndex = 9;
             // 
             // MainForm
