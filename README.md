@@ -169,6 +169,54 @@ Adj egy ⭐️-t, ha ez a projekt segített neked!
 
 </details>
 
+<details>
+<summary><b>📝 Descrizione in Italiano</b></summary>
+
+### 🚀 Capacità specifiche del progetto
+
+#### 🔄 Gestione avanzata delle immagini
+- **Supporto di rete**: Backup diretto su condivisioni UNC e ripristino rapido delle immagini dalle cartelle di rete.
+- **Distribuzione centralizzata di rete (PXE)**: Usa WinPE e la connettività di rete per distribuire rapidamente le immagini su più PC.
+- **Strato WIMLib**: Operazioni di cattura e applicazione ultra-veloci utilizzando l'integrazione ad alte prestazioni di `wimlib`.
+- **Supporto VHD/VHDX**: Distribuisci le immagini direttamente su dischi virtuali per il test dell'avvio nativo.
+
+#### 🔧 Avvio e riparazione del sistema
+- **Ricostruttore di avvio UEFI**: Costruisci le strutture del bootloader da zero su dischi privi di partizioni EFI.
+- **Ordine di avvio automatico**: Raffina automaticamente l'ordine di avvio UEFI (DisplayOrder) tramite `bcdedit` all'interno di WinPE.
+- **Motore di salute DISM**: Riparazione profonda del file system utilizzando gli strumenti DISM e SFC su installazioni offline.
+
+#### 📦 Driver e localizzazione
+- **Gestione dei driver**: Estrai i driver da sistemi live o offline e iniettili in altre installazioni con un solo clic.
+- **Sistema linguistico flessibile**: Framework di localizzazione facilmente estendibile tramite file `.ini` esterni (TR/EN integrati).
+
+---
+
+### 📚 Scenari d'uso
+1. **Migrazione del sistema**: Esegui il backup di Windows e migralo su un nuovo disco NVMe in pochi minuti.
+2. **Distribuzione di massa**: Distribuisci rapidamente un'immagine master a più PC collegati in rete tramite WinPE.
+3. **Partizionamento professionale**: Crea strutture GPT/MBR (con Recovery alla fine) in pochi secondi.
+4. **Recupero da disastro**: Scansiona i sistemi non avviabili con HealthCheck e ripara i file di sistema dalle fonti originali.
+5. **Distribuzione VHD/VHDX**: Testa le installazioni di sistema su unità virtuali senza alterare la partizione fisica.
+
+---
+
+### 📋 Specifiche tecniche
+- **Framework**: .NET 8
+- **Supporto OS**: Windows 10, 11, Server 2016/2019/2022 (x64)
+- **Tecnologia principale**: WIMLib Core, DiskPart API, BCD Engineering
+- **Piattaforma**: x64 / Ottimizzato per WinPE
+- **Licenza**: Progetto di sviluppo Open Source
+
+---
+
+### 🤝 Contribuire
+Contributi, segnalazioni di problemi e richieste di funzionalità sono benvenuti!
+
+### ⭐ Supporto
+Dai una ⭐️ se questo progetto ti ha aiutato!
+
+</details>
+
 ---
 
 <p align="center">
