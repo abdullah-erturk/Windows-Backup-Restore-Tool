@@ -11,6 +11,9 @@
 
 ### Professional System Backup, Restore and Boot Repair Infrastructure
 > **Windows Backup Restore Tool** is a high-performance, technician-focused system management tool based on .NET 8. It works on both WinPE (Windows Preinstallation Environment) and live systems, allowing you to manage backup, restore, boot repair, and driver management from a single location.
+
+### Sistema professionale backup/ripristino del sistema e riparazione bootloader
+> **Windows Backup Restore Tool** è uno strumento di gestione del sistema ad alte prestazioni, incentrato su funzione tecniche, basato su .NET 8. Funziona sia in WinPE (ambiente preinstallazione di Windows) che in sistemi live, consentendo di gestire backup, ripristino, riparazione del bootloader e gestione di driver da un'unica posizione.
 ---
 
 <details>
@@ -166,6 +169,54 @@ Hozzájárulások, problémák és funkciókérések mind üdvözölve vannak!
 
 ### ⭐ Támogatás
 Adj egy ⭐️-t, ha ez a projekt segített neked!
+
+</details>
+
+<details>
+<summary><b>📝 Descrizione in Italiano</b></summary>
+
+### 🚀 Funzionalità specifiche del progetto
+
+#### 🔄 Gestione avanzata immagini
+- **Supporto di rete**: backup diretto in condivisioni UNC e ripristino rapido immagini dalle cartelle di rete.
+- **Distribuzione centralizzata di rete (PXE)**: per distribuire rapidamente le immagini in più PC usa WinPE e la connettività di rete.
+- **Strato WIMLib**: usa l'integrazione ad alte prestazioni di `wimlib` per operazioni di cattura e applicazione ultra-veloci.
+- **Supporto VHD/VHDX**: distribuzione delle immagini direttamente su dischi virtuali per il test dell'avvio nativo.
+
+#### 🔧 Avvio e riparazione del sistema
+- **Ricostruzione boot UEFI**: ricostruzione in dischi privi di partizioni EFI delle strutture del bootloader da zero.
+- **Ordine di avvio automatico**: all'interno di WinPE ottimizza automaticamente l'ordine di boot UEFI (DisplayOrder) tramite `bcdedit`.
+- **Motore DISM**: in installazioni offline riparazione profonda del file system usando gli strumenti DISM e SFC.
+
+#### 📦 Driver e localizzazione
+- **Gestione driver**: con un solo clic estrazione dei driver da sistemi live o offline e inserimento in altre installazioni.
+- **Sistema linguistico flessibile**: framework localizzazione facilmente estendibile tramite file `.ini` esterni (lingue TR/EN integrate).
+
+---
+
+### 📚 Scenari d'uso
+1. **Migrazione sistema**: esecuzione in pochi minuti del backup di Windows e migrazione in un nuovo disco NVMe.
+2. **Distribuzione di massa**: distribuzione rapida tramite WinPE di un'immagine master in più PC collegati in rete.
+3. **Partizionamento professionale**: creazione in pochi secondi di strutture GPT/MBR (con Recovery alla fine).
+4. **Recupero da disastro**: scansione dei sistemi non bootabili con HealthCheck e ripara i file di sistema dalle sorgenti originali.
+5. **Distribuzione VHD/VHDX**: testa delle installazioni di sistema in unità virtuali senza alterare la partizione fisica.
+
+---
+
+### 📋 Specifiche tecniche
+- **Framework**: .NET 8
+- **Sistemi supportati**: Windows 10, 11, Server 2016/2019/2022 (x64)
+- **Tecnologia principale**: WIMLib Core, DiskPart API, BCD Engineering
+- **Piattaforma**: x64 / ottimizzato per WinPE
+- **Licenza**: progetto di sviluppo Open Source
+
+---
+
+### 🤝 Contribuizione
+Sono benvenuti contributi, segnalazioni di problemi e richieste di funzionalità!
+
+### ⭐ Supporto
+Se questo progetto ti ha aiutato votalo con una ⭐️!
 
 </details>
 
