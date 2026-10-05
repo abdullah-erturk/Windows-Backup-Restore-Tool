@@ -17,6 +17,8 @@
 ---
 
 <details>
+  Önizleme resmi eski sürüme ait olabilir / The preview image may be from an older version.
+  
 <summary><b>📸 Önizleme/Preview</b></summary>
   
 ![sample](https://github.com/abdullah-erturk/Windows-Backup-Restore-Tool/blob/main/1.jpeg)
