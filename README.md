@@ -60,7 +60,7 @@
 ---
 
 ### 📋 Teknik Özellikler
-- **Framework**: .NET 8
+- **Framework**: .NET 4.5
 - **İşletim Sistemi**: Windows 10, 11, Server 2016/2019/2022 (x64)
 - **Altyapı**: WIMLib Core, DiskPart API, BCD Engineering
 - **Platform**: x64 / WinPE Optimize
@@ -108,7 +108,7 @@ Bu aracı faydalı bulduysanız, lütfen bir yıldız vererek değerlendirin!
 ---
 
 ### 📋 Technical Specifications
-- **Framework**: .NET 8
+- **Framework**: .NET 4.5
 - **OS Support**: Windows 10, 11, Server 2016/2019/2022 (x64)
 - **Core Technology**: WIMLib Core, DiskPart API, BCD Engineering
 - **Platform**: x64 / WinPE Optimized
@@ -158,7 +158,7 @@ Give a ⭐️ if this project helped you!
 ---
 
 ### 📋 Műszaki specifikációk
-- **Framework**: .NET 8
+- **Framework**: .NET 4.5
 - **OS támogatás**: Windows 10, 11, Server 2016/2019/2022 (x64)
 - **Alapvető technológia**: WIMLib mag, DiskPart API, BCD fejlesztés
 - **Platform**: x64 / WinPE optimalizált
@@ -206,7 +206,7 @@ Adj egy ⭐️-t, ha ez a projekt segített neked!
 ---
 
 ### 📋 Specifiche tecniche
-- **Framework**: .NET 8
+- **Framework**: .NET 4.5
 - **Sistemi supportati**: Windows 10, 11, Server 2016/2019/2022 (x64)
 - **Tecnologia principale**: WIMLib Core, DiskPart API, BCD Engineering
 - **Piattaforma**: x64 / ottimizzato per WinPE
