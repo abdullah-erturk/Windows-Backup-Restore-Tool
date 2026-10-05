@@ -7,13 +7,13 @@
 # Windows Backup / Restore Tool v4 🛡️
 
 ### Profesyonel Sistem Yedekleme, Geri Yükleme ve Önyükleme Onarım Altyapısı
-> **Windows Backup Restore Tool**, .NET 8 tabanlı, yüksek performanslı ve teknisyen odaklı bir sistem yönetim aracıdır. Hem WinPE (Windows Preinstallation Environment) hem de canlı sistemlerde çalışarak; yedekleme, geri yükleme, boot onarımı ve sürücü yönetimini tek merkezden yönetmenizi sağlar.
+> **Windows Backup Restore Tool**, .NETFramework 4.5 tabanlı, yüksek performanslı ve teknisyen odaklı bir sistem yönetim aracıdır. Hem WinPE (Windows Preinstallation Environment) hem de canlı sistemlerde çalışarak; yedekleme, geri yükleme, boot onarımı ve sürücü yönetimini tek merkezden yönetmenizi sağlar.
 
 ### Professional System Backup, Restore and Boot Repair Infrastructure
-> **Windows Backup Restore Tool** is a high-performance, technician-focused system management tool based on .NET 8. It works on both WinPE (Windows Preinstallation Environment) and live systems, allowing you to manage backup, restore, boot repair, and driver management from a single location.
+> **Windows Backup Restore Tool** is a high-performance, technician-focused system management tool based on .NETFramework 4.5. It works on both WinPE (Windows Preinstallation Environment) and live systems, allowing you to manage backup, restore, boot repair, and driver management from a single location.
 
 ### Sistema professionale backup/ripristino del sistema e riparazione bootloader
-> **Windows Backup Restore Tool** è uno strumento di gestione del sistema ad alte prestazioni, incentrato su funzione tecniche, basato su .NET 8. Funziona sia in WinPE (ambiente preinstallazione di Windows) che in sistemi live, consentendo di gestire backup, ripristino, riparazione del bootloader e gestione di driver da un'unica posizione.
+> **Windows Backup Restore Tool** è uno strumento di gestione del sistema ad alte prestazioni, incentrato su funzione tecniche, basato su .NETFramework 4.5. Funziona sia in WinPE (ambiente preinstallazione di Windows) che in sistemi live, consentendo di gestire backup, ripristino, riparazione del bootloader e gestione di driver da un'unica posizione.
 ---
 
 <details>
