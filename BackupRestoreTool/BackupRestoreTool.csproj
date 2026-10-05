@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    
+    <TargetFramework>net45</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS8600;CS8602;CS8604;CS8625;CS8601;CS8618</NoWarn>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>x64</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+
+    <!-- Application Identity -->
+    <AssemblyName>BackupRestoreTool</AssemblyName>
+    <RootNamespace>BackupRestoreTool</RootNamespace>
+    <Product>Windows Backup / Restore Tool</Product>
+    <AssemblyTitle>Windows Backup / Restore Tool</AssemblyTitle>
+    <Description>Windows disk backup, restore and boot repair tool for live Windows and WinPE environments.</Description>
+    <Authors>Abdullah ERTÜRK</Authors>
+    <Company>Abdullah ERTÜRK</Company>
+    <Copyright>Copyright © 2025 Abdullah ERTÜRK</Copyright>
+    <Version>4.0.0</Version>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <FileVersion>4.0.0.0</FileVersion>
+    <NeutralLanguage>tr-TR</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <!-- Always copy AppFiles to bin subfolder in output folder for consistency -->
+  <Target Name="CopyAppFilesToBin" AfterTargets="Build">
+    <ItemGroup>
+      <AppFilesToCopy Include="$(ProjectDir)AppFiles\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(AppFilesToCopy)" DestinationFolder="$(OutputPath)bin\%(RecursiveDir)" SkipUnchangedFiles="false" />
+  </Target>
+
+  <Target Name="CopySupportFilesAfterPublish" AfterTargets="Publish">
+    <ItemGroup>
+      <SupportFiles Include="$(ProjectDir)AppFiles\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SupportFiles)" DestinationFolder="$(PublishDir)bin\%(RecursiveDir)" SkipUnchangedFiles="false" />
+  </Target>
+
+</Project>
