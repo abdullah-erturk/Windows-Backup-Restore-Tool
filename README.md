@@ -14,6 +14,10 @@
 
 ### Sistema professionale backup/ripristino del sistema e riparazione bootloader
 > **Windows Backup Restore Tool** è uno strumento di gestione del sistema ad alte prestazioni, incentrato su funzione tecniche, basato su .NETFramework 4.5. Funziona sia in WinPE (ambiente preinstallazione di Windows) che in sistemi live, consentendo di gestire backup, ripristino, riparazione del bootloader e gestione di driver da un'unica posizione.
+
+### Profesionalna infrastruktura za varnostno kopiranje in obnovitev sistema ter popravilo zagona
+> **Windows Backup Restore Tool** je visoko zmogljivo orodje za upravljanje sistema, namenjeno tehnikom, ki temelji na .NET Framework 4.5. Deluje tako v okolju WinPE (Windows Preinstallation Environment) kot tudi v delujočih sistemih, kar vam omogoča upravljanje varnostnih kopij, obnovitve, popravila zagona in upravljanje gonilnikov z enega samega mesta.
+
 ---
 
 <details>
@@ -219,6 +223,54 @@ Sono benvenuti contributi, segnalazioni di problemi e richieste di funzionalità
 
 ### ⭐ Supporto
 Se questo progetto ti ha aiutato votalo con una ⭐️!
+
+</details>
+
+<details>
+<summary><b>📝 Opis v Slovenščini</b></summary>
+
+### 🚀 Zmogljivosti, specifične za projekt
+
+#### 🔄 Napredno upravljanje slik
+- **Podpora omrežja**: Neposredno varnostno kopiranje v UNC-skladišča in hitra obnova slik iz omrežnih skupnih map.
+- **Centralizirana omrežna namestitev (PXE)**: Uporabite WinPE in omrežno povezljivost za hitro namestitev slik na več računalnikov v omrežju.
+- **Sloj WIMLib**: Izjemno hitre operacije zajemanja in uporabe s pomočjo visoko zmogljive integracije `wimlib`.
+- **Podpora za VHD/VHDX**: Namestite slike neposredno na virtualne diske za testiranje zagona v izvirnem okolju.
+
+#### 🔧 Popravljanje zagona in sistema
+- **Orodje za obnovo zagona UEFI**: Izgradnja struktur zagonskega nalagalnika od začetka na diskih, na katerih manjkajo EFI-particije.
+- **Avtomatski vrstni red zagona**: Samodejno izboljšanje vrstnega reda zagona UEFI (DisplayOrder) prek ukaza `bcdedit` v okolju WinPE.
+- **Mehanik za zdravje DISM**: Poglobljeno popravljanje datotečnega sistema z orodji DISM in SFC na namestitvah brez internetne povezave.
+
+#### 📦 Gonilniki in lokalizacija
+- **Upravljanje gonilnikov**: Izvlecite gonilnike iz aktivnih ali offline sistemov in jih z enim samim klikom vstavite v druge namestitve.
+- **Prilagodljiv jezikovni sistem**: Enostavno razširljiv okvir za lokalizacijo prek zunanjih datotek `.ini` (vgrajeni jeziki TR/EN).
+
+---
+
+### 📚 Scenariji uporabe
+1. **Migracija sistema**: V nekaj minutah naredite varnostno kopijo trenutnega sistema Windows in ga prenesite na nov NVMe disk.
+2. **Množična namestitev**: Prek WinPE hitro namestite glavno sliko na več računalnikov, povezanih v omrežje.
+3. **Profesionalno razdeljevanje diska**: V nekaj sekundah ustvarite strukture GPT/MBR (z območjem za obnovitev na koncu).
+4. **Obnova po nesreči**: S pomočjo HealthCheck preglejte sisteme, ki se ne zaganjajo, in popravite sistemske datoteke z uporabo izvirnih virov.
+5. **Namestitev VHD/VHDX**: Preizkusite namestitve sistema na virtualnih pogonih, ne da bi spremenili fizično particijo.
+
+---
+
+### 📋 Tehnične specifikacije
+- **Framework**: .NET 4.5
+- **Podprti operacijski sistemi**: Windows 10, 11, Server 2016/2019/2022 (x64)
+- **Osnovna tehnologija**: WIMLib Core, DiskPart API, BCD Engineering
+- **Platforma**: x64 / optimizirano za WinPE
+- **Licenca**: Razvojni projekt odprte kode
+
+---
+
+### 🤝 Prispevanje
+Prispevki, poročila o težavah in predlogi za nove funkcije so dobrodošli!
+
+### ⭐ Podpora
+Daj ⭐️, če ti je ta projekt pomagal!
 
 </details>
 
